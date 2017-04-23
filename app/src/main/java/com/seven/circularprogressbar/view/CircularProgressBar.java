@@ -85,7 +85,7 @@ public class CircularProgressBar extends View {
             setProgress(attributes.getFloat(R.styleable.CircularProgressBar_progress, 0.0f));
             setStroke_width((int) attributes.getDimension(R.styleable.CircularProgressBar_stroke_width, 8));
         }
-
+        attributes.recycle();
         updateBackgroundColor();
     }
 
